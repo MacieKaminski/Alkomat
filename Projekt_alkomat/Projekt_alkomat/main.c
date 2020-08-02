@@ -38,10 +38,8 @@ int main(void)
 {
 	DDRB |= 1<<DDB0;
 	DDRB |= 1<<DDB1;
-	//DDRB = 0b111111;  //klawiatura
 	PORTB |= 1<<PORTB0;
 	PORTB &= ~(1 << PORTB1);
-	//PORTB = 0b111000;  //klawiatura
 
 	TCCR0B |= 1 << CS02;
 	TIMSK0 |= 1 << TOIE0;
